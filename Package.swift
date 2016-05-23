@@ -4,5 +4,6 @@ let package = Package(
     name: "Fluent",
     dependencies: [ 
         .Package(url: "https://github.com/qutheory/libc.git", majorVersion: 0, minor: 1),
+        .Package(url: "https://github.com/Zewo/Reflection.git", majorVersion: 0, minor: 1),
     ]
 )
