@@ -27,12 +27,16 @@ class QueryFiltersTests: XCTestCase {
             case broken
         }
 
-        func execute<T: Model>(_ query: Query<T>) throws -> [[String: Value]] {
+        func query<T: Model>(_ query: Query<T>) throws -> [[String: Value]] {
             return []
+        }
+
+        func schema(_ schema: Schema) throws {
+            
         }
     }
 
-    static var allTests : [(String, QueryFiltersTests -> () throws -> Void)] {
+    static var allTests : [(String, (QueryFiltersTests) -> () throws -> Void)] {
         return [
             ("testBasalQuery", testBasalQuery),
             ("testBasicQuery", testBasicQuery),
